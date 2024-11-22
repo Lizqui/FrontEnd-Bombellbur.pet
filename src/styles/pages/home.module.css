@@ -1,0 +1,102 @@
+/*Documentacion de imagenes */
+ *{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+}
+
+body{
+    
+    box-align: 2px;
+    margin: 22px;
+    background-image: url(../../public/img/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.sliderBox{
+    width: 1260px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+.sliderBox ul{
+    display: flex;
+    padding: 0;
+    width: 300%;
+    animation: slide 40s infinite alternate ease-in-out;    
+}
+
+.sliderBox li{
+    width: 800%;
+    list-style: none;
+    position: relative;  
+}
+
+.sliderBox img{
+    width: 100%;
+    height: 80%;  
+}
+
+@keyframes slide{
+    0%{ margin-left: 0; }
+    20%{ margin-left: 0; }
+
+    25%{ margin-left: -100%;}
+    45%{ margin-left: -100%;}
+
+    50%{ margin-left: -200%;}
+    70%{ margin-left: -200%;}
+}
+
+@media(max-width:991px){
+    body{
+        padding: 30px;
+    }
+    .sliderBox{
+        width: 200%;
+    }
+}
+
+/*ducumentacion de vision y mision */
+
+.contenedor{
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 400%;
+    text-align: justify;
+}
+
+.txt1{
+    margin: 0px  80px;
+    transition: .2s linear;
+    font-size: 25px;
+}
+
+.visionymision{
+    color: rgb(2, 2, 2);
+    text-align: center;
+}
+.minerva{
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+}
+
+/*documentacion pie de pagina */
+
+.footercontainer{
+    width: 100%;
+    padding: 30px;
+    background-color: #E1EDE0;
+    color: rgb(7, 7, 7);
+    font-size: 20px;
+}
+
+a:visited{
+    color:var(--green);
+    text-decoration: #b41ab1;
+}

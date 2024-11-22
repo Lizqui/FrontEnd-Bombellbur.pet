@@ -1,0 +1,201 @@
+/*documentacion de menu inicio */
+
+
+:root{
+    --pink:#b41ab1;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;  
+    background: #E1EDE0;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0  .5rem 1rem red(0,0,0,1);
+    height: 90px;
+}
+
+header .logo {
+    font-size: 3rem;
+    color:#333;
+    font-weight: bolder;
+}
+
+header .logo span{
+    color: var(--pink);
+}
+
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: rgb(15, 15, 14);
+}
+
+header .navbar a:hover{
+    color: var(--pink);
+}
+
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 2rem;
+    }
+}
+@media(max-width:768px){
+    html .fa-bars{
+        display: block;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;  left: 0; right: 0;
+        background: #e3e1e3;
+        border-top: .1rem solid rgb(0, 0,0,.1);
+    }
+}
+
+
+
+
+/*Documentacion de login*/
+*{
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../../styles/pages/login.module.css);
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper{
+    width: 420px;
+    background-color: rgb(241, 233, 233);
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(red, green, blue);
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+    font-size: 70px;
+    color: #000000;
+}
+
+.wrapper .inputBox {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.inputBox input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: #000000;
+    outline: none;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 40px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    padding: 20px 45px 20px 20px;
+}
+
+.inputBox input::placeholder{
+    color:#000000;
+}
+
+.inputBox i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translatey(-50%);
+    font-size: 20px;
+}
+
+.wrapper .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input{
+    accent-color: #000000;
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #060606;
+    font-weight: bold;
+}
+
+.wrapper  .registerLink{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.registerLink p a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.registerLink p a:hover {
+    text-decoration: underline;
+} 
+
+.audio{
+    text-align: center ;
+    margin: 0px  20px;
+
+}

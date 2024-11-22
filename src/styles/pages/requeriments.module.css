@@ -1,0 +1,129 @@
+/*documentacion de menu inicio */
+:root{
+    --pink:#b41ab1;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;  
+    background: #E1EDE0;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0  .5rem 1rem red(0,0,0,1);
+    height: 90px;
+}
+
+header .logo {
+    font-size: 3rem;
+    color:#333;
+    font-weight: bolder;
+}
+
+header .logo span{
+    color: var(--pink);
+}
+
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: rgb(15, 15, 14);
+}
+
+header .navbar a:hover{
+    color: var(--pink);
+}
+
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 2rem;
+    }
+}
+@media(max-width:768px){
+    html .fa-bars{
+        display: block;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;  left: 0; right: 0;
+        background: #e3e1e3;
+        border-top: .1rem solid rgb(0, 0,0,.1);
+    }
+}
+
+body{
+    background-image: url(../../public/img/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footercontainer{
+    width: 100%;
+    padding: 30px;
+    background-color: #E1EDE0;
+    color: rgb(7, 7, 7);
+    font-size: 20px;
+}
+
+.txt1{
+    margin: 0px  80px;
+    transition: .2s linear;
+    font-size: 25px;
+}
+.requisitos{
+    text-align: center;
+    font-size: 30px;
+}
+
+/*boton*/
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #63e0bf;
+    color: #060606;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(19, 19, 19, 0.1);
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+
+.btn:hover {
+    background-color: #b28fcf;
+}
+
+.audio{
+    text-align: center;
+    margin-left: 517px;
+}
